@@ -10,19 +10,20 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #000;
   font-family: 'Orbitron', sans-serif; /* Updated font family */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-        .container {
-          z-index: 1; /* Ensures content is above the background */
-          position: relative;
-          text-align: center;
-          color: white; /* Changes text color for better visibility */
-        }
+/* Remove the flexbox layout from the body to allow natural document flow */
+.container {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-bottom: 50px; /* Add some padding at the bottom if needed */
+  margin-top: 50px; /* Add margin to top to push the container down a bit */
+}
         h1 {
           color: #007bff; /* Gives the header a pop of color */
           margin-bottom: 0.5em;
@@ -113,7 +114,9 @@ body, html {
         <h1>Welcome to JIMMY on BLAST</h1>
         <img src="jimmy-neutron-cool.gif" alt="JIMMY Coin" id="jimmyLogo">
         <br>
-        <p>The ONLY $JIMMY on BLAST!</p>
+        <p>The only $JIMMY coin on BLAST.</p> 
+        <br>
+            <p>Jimmy Neutron is characterized as a resourceful, curious, and adventurous young inventor who uses his intellect to solve problems and explore the wonders of science, often with entertaining and comedic results.</p>
         <a href="https://twitter.com/jimmycoinblast" target="_blank" class="button">Twitter</a>
         <a href="YOUR_DEXSCREENER_LINK_HERE" target="_blank" class="button">Dexscreener Chart</a>
         
